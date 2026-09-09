@@ -41,6 +41,7 @@ public class SortEvenOdds {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
+        // even or odd nubeer
 
         sortEvenOdd(arr);
 
