@@ -5,8 +5,10 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
+
 public class Decresingorder {
     public static void main(String[] args) {
+
 
         Scanner sc = new Scanner(System.in);
 
@@ -33,6 +35,9 @@ public class Decresingorder {
             } else {
                 ans[i] = a[right] * a[right];
                 right--;
+
+
+
             }
         }
 
