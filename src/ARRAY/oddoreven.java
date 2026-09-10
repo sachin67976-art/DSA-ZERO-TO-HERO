@@ -1,3 +1,5 @@
+package ARRAY;
+
 public class oddoreven {
     public static void main(String [] args){
         int a = 2;
