@@ -1,3 +1,5 @@
+package ARRAY;
+
 import java.util.Scanner;
 public class Scannerss {
    public static void main(String[] args) {

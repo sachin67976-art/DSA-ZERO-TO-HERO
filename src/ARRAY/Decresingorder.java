@@ -1,4 +1,4 @@
-// given an integer array "a" sorted in non decresing
+package ARRAY;// given an integer array "a" sorted in non decresing
 // order return an array of the squares of each
 // number sorted in non- decresing order.
 
