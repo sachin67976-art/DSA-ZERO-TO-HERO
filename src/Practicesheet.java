@@ -1,21 +1,13 @@
-import java.util.Scanner;
-
-
 public class Practicesheet {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the array");
-        int n = sc.nextInt();
-        int arr[] = new int[n];
-        System.out.println("Enter" + n + "element");
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = sc.nextInt();
-            ;
-        }
-        for (int i = 0; i < n; i++) {
 
+        int[] arr = {2, 4, 1, 3, 6, 5};
+        int sum = 0;
 
-            System.out.print(arr[i] + "");
+        for (int i = 3; i < arr.length; i++) {
+            sum = sum + arr[i];
         }
+
+        System.out.println("Sum = " + sum);
     }
 }
