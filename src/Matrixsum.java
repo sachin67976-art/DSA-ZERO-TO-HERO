@@ -88,7 +88,7 @@ public class Matrixsum {
         System.out.println("Matrix 2:");
         printmatrix(b);
 
-        // Add matrices
+        // Add matrices a
         add(a, r1, c1, b, r2, c2);
     }
 }
