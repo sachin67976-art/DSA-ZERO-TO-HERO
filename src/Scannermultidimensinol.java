@@ -29,10 +29,7 @@ public class Scannermultidimensinol {
                 }
 
 
-                // int[][] arr2 = {
-                //    {1, 5, 6},
-                // {7, 9, 11},
-                // {8, 1, 1}
+
             };
 
             printarray(arr);
