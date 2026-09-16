@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class MultiDimensionalArray {
 
     static void printarray(int[][] arr) {
@@ -13,6 +14,7 @@ public class MultiDimensionalArray {
     }
 
     public static void main(String[] args) {
+
 
         int[][] arr2 = {
                 {1, 5, 6},
