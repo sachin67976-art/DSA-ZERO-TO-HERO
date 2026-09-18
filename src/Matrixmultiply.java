@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Multiplyofmatrix {
+public class Matrixmultiply {
 
     // Matrix print karne ka method
     static void printmatrix(int[][] matrix) {
