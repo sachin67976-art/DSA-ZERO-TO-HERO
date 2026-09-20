@@ -21,6 +21,7 @@ public class Pascaltriangle {
         for (int i = 0; i < n; i++) {
 
             // ith row has i+1 columns
+
             ans[i] = new int[i + 1];
 
             // First and last element = 1
