@@ -1,3 +1,5 @@
+package ARRAY;
+
 public class Maxiumvalue {
     public static void main(String[] args) {
 

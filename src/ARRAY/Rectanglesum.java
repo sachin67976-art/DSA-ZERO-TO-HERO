@@ -1,3 +1,5 @@
+package ARRAY;
+
 import java.util.Scanner;
 public class Rectanglesum {
     static int findsum(int[][] matrix, int l1, int r1, int l2, int r2){

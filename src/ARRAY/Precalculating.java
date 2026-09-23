@@ -1,10 +1,11 @@
+package ARRAY;
+
 import java.util.Scanner;
 
-public class Findprefixsummatrix {
+public class Precalculating {
 
     // Normal method: O(rows * columns)
     static int findsum(int[][] matrix, int l1, int r1, int l2, int r2) {
-
         int sum = 0;
 
         for (int i = l1; i <= l2; i++) {
@@ -16,7 +17,7 @@ public class Findprefixsummatrix {
         return sum;
     }
 
-    // Create 2D Prefix Sum Matrix
+    // Calculate row-wise prefix sum
     static void findprefixsummatrix(int[][] matrix) {
 
         int r = matrix.length;
@@ -28,43 +29,27 @@ public class Findprefixsummatrix {
                 matrix[i][j] += matrix[i][j - 1];
             }
         }
-
-        // Column-wise prefix sum
-        for (int j = 0; j < c; j++) {
-            for (int i = 1; i < r; i++) {
-                matrix[i][j] += matrix[i - 1][j];
-            }
-        }
     }
 
-    // Rectangle Sum using 2D Prefix Sum: O(1)
-    static int findsum3(int[][] matrix, int l1, int r1, int l2, int r2) {
+    // Using prefix sum: O(rows)
+    static int findsum2(int[][] matrix, int l1, int r1, int l2, int r2) {
 
-        // Convert matrix into prefix sum matrix
+        int sum = 0;
+
+        // Create row-wise prefix sum
         findprefixsummatrix(matrix);
 
-        int sum = matrix[l2][r2];
+        for (int i = l1; i <= l2; i++) {
 
-        int up = 0;
-        int left = 0;
-        int leftup = 0;
-
-        // Remove area above the rectangle
-        if (l1 > 0) {
-            up = matrix[l1 - 1][r2];
+            // If r1 is 0, there is no previous element
+            if (r1 == 0) {
+                sum += matrix[i][r2];
+            } else {
+                sum += matrix[i][r2] - matrix[i][r1 - 1];
+            }
         }
 
-        // Remove area to the left of the rectangle
-        if (r1 > 0) {
-            left = matrix[l2][r1 - 1];
-        }
-
-        // Add back overlapping area
-        if (l1 > 0 && r1 > 0) {
-            leftup = matrix[l1 - 1][r1 - 1];
-        }
-
-        return sum - up - left + leftup;
+        return sum;
     }
 
     public static void main(String[] args) {
@@ -77,7 +62,9 @@ public class Findprefixsummatrix {
 
         int[][] matrix = new int[r][c];
 
-        System.out.println("Enter " + (r * c) + " values:");
+        int totalElements = r * c;
+
+        System.out.println("Enter " + totalElements + " values:");
 
         for (int i = 0; i < r; i++) {
             for (int j = 0; j < c; j++) {
@@ -92,13 +79,11 @@ public class Findprefixsummatrix {
         int l2 = sc.nextInt();
         int r2 = sc.nextInt();
 
-        // Normal method
         System.out.println("Rectangle sum using normal method: "
                 + findsum(matrix, l1, r1, l2, r2));
 
-        // Prefix sum method
         System.out.println("Rectangle sum using prefix sum: "
-                + findsum3(matrix, l1, r1, l2, r2));
+                + findsum2(matrix, l1, r1, l2, r2));
 
         sc.close();
     }

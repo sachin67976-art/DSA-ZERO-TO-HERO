@@ -1,4 +1,5 @@
-import java.util.Scanner;
+package ARRAY;
+
 public class MultiDimensionalArray {
 
     static void printarray(int[][] arr) {
