@@ -1,3 +1,5 @@
+import jdk.swing.interop.SwingInterOpUtils;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -32,6 +34,18 @@ public static void main(String[] args){
     Collections.reverse(list);
     System.out.println("Reverse list" + list);
     System.out.println("Ascending order"+ list);
+Collections.sort(list, Collections.reverseOrder();
+    System.out.println("Descending order" + list);
+    ArrayList<String> l1 =new ArrayList<>();
+    l1.add("welcome");
+    l1.add("to");
+    l1.add("physic");
+    l1.add("wallah");
+    System.out.println("og" +l1);
+    Collections.sort(l1);
+    System.out.println("sort"+ l1);
 
     }
+
+
 }
