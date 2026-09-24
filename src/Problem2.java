@@ -34,7 +34,7 @@ public static void main(String[] args){
     Collections.reverse(list);
     System.out.println("Reverse list" + list);
     System.out.println("Ascending order"+ list);
-Collections.sort(list, Collections.reverseOrder();
+Collections.sort(list, Collections.reverseOrder());
     System.out.println("Descending order" + list);
     ArrayList<String> l1 =new ArrayList<>();
     l1.add("welcome");
