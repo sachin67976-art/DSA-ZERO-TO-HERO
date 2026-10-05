@@ -1,3 +1,5 @@
+package ARRAY;
+
 class Solution30 {
     static void main(String[] args) {
 

@@ -1,3 +1,5 @@
+package ARRAY;
+
 public class Solidpattern {
   public static void main(String[] args) {
 //int r=3;

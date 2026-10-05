@@ -1,3 +1,5 @@
+package ARRAY;
+
 public class Arrayrevision {
      public static void main(String[] args) {
 //         int arr[] ={12,14,1245};

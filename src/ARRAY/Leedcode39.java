@@ -1,3 +1,5 @@
+package ARRAY;
+
 import java.util.*;
 
 class Leedcode39 {

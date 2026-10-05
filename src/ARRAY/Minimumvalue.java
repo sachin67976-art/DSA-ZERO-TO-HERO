@@ -1,3 +1,5 @@
+package ARRAY;
+
 public class Minimumvalue {
     static void main(String[] args) {
         int arr[]={11,2,3,4,-5,6,7,8,9};

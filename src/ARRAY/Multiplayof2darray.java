@@ -1,3 +1,5 @@
+package ARRAY;
+
 public class Multiplayof2darray {
     public  static void main(String[] args) {
         int arr[][]={{1,2,3},{1,2,3}};

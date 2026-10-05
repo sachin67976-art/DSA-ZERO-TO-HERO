@@ -1,4 +1,3 @@
-package ARRAY;
 
 import java.util.*;
 

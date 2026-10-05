@@ -1,3 +1,5 @@
+package ARRAY;
+
 public class Twodarray {
     static void main(String[] args) {
 //        int[][] arr;

@@ -1,3 +1,5 @@
+package ARRAY;
+
 public class Min2darray {
     static void main(String[] args) {
         int arr[][] ={{1,2,3},{21,20,19}};

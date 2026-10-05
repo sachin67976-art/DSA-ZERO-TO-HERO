@@ -1,3 +1,5 @@
+package ARRAY;
+
 public class Maximum {
     static void main(String[] args) {
         int arr[]={1,200,-22,33,400,-500};

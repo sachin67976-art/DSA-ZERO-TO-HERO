@@ -1,3 +1,5 @@
+package ARRAY;
+
 public class Routing {
    public static void main(String[] args) {
         int day =5 ;
