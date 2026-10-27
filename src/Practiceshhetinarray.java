@@ -1,21 +1,33 @@
 public class Practiceshhetinarray {
-    static double getaverage(int arr[]){
-        double sum =0;
-        for(int i: arr){
-            sum +=i;
+    static boolean findarray(int arr[], int target) {
+        for (int i = 0; i <arr.length; i++) {
+            if (arr[i] == target) {
+                return true;
+            }
         }
-        int size =arr.length;
-        double average =sum/size;
-        return average;
+
+
+        return false;
     }
+
+
     static void main(String[] args) {
-        int arr []={1,2,3,45};
-        System.out.println(getaverage(arr));
+        int arr[] = {1, 2, 3, 4, 5, 6, 7};
+        boolean ans = findarray(arr, 91);
+        System.out.println(ans);
 
     }
+}
 
 
-    }
+
+
+
+
+
+
+
+
 
 
 
